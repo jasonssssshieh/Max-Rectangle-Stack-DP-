@@ -22,6 +22,7 @@ public:
     }
     
     int MaxA(){
+        nums.push_back(0);
         int res = -1;
         for(int i = 0; i < nums.size();){
             if(s.empty() || nums[s.top()] < nums[i]){
